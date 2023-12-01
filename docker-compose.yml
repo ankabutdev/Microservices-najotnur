@@ -1,0 +1,41 @@
+version: '3.4'
+
+networks:
+  backend:
+
+services:
+  
+  sqldata:
+    container_name: najotnur-sqldata
+    volumes:
+    - ./db:/var/opt/mssql/data
+    image: "mcr.microsoft.com/mssql/server:2022-latest"
+    environment:
+      - SA_PASSWORD=YourStrong@Passw0rd
+      - ACCEPT_EULA=Y
+    networks:
+      - backend
+    ports:
+      - 7778:1433
+
+  gateway.api:
+    container_name: najotnur-gateway
+    image: ${DOCKER_REGISTRY-}gatewayapi
+    build:
+      context: .
+      dockerfile: NajotNur/src/GateWayService/Gateway.API/Dockerfile
+    networks:
+     - backend
+    ports:
+      - 6767:8080
+  
+  najotnur.api:
+    container_name: najotnur-api-name
+    image: ${DOCKER_REGISTRY-}najotnurapi
+    build:
+      context: .
+      dockerfile: NajotNur/src/NajotNurService/NajotNur.API/Dockerfile
+    networks:
+     - backend
+
+  
