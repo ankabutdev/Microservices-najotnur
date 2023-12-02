@@ -7,19 +7,23 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{3AAAAFA7-3C9
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NajotNurService", "NajotNurService", "{49AAD9D8-FA84-4460-96CA-906C6C6BC8CF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NajotNur.API", "NajotNur\src\NajotNurService\NajotNur.API\NajotNur.API.csproj", "{311AA2D3-1D7E-4533-A454-F8A968514F6F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NajotNur.API", "NajotNur\src\NajotNurService\NajotNur.API\NajotNur.API.csproj", "{311AA2D3-1D7E-4533-A454-F8A968514F6F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NajotNur.Domain", "NajotNur\src\NajotNurService\NajotNur.Domain\NajotNur.Domain.csproj", "{B05C9B2E-EAEB-4172-B96E-1791F430B2FE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NajotNur.Domain", "NajotNur\src\NajotNurService\NajotNur.Domain\NajotNur.Domain.csproj", "{B05C9B2E-EAEB-4172-B96E-1791F430B2FE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NajotNur.Application", "NajotNur\src\NajotNurService\NajotNur.Application\NajotNur.Application.csproj", "{573DEC50-2D27-46A2-B729-F5B59A4DBC23}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NajotNur.Application", "NajotNur\src\NajotNurService\NajotNur.Application\NajotNur.Application.csproj", "{573DEC50-2D27-46A2-B729-F5B59A4DBC23}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NajotNur.Infrastructure", "NajotNur\src\NajotNurService\NajotNur.Infrastructure\NajotNur.Infrastructure.csproj", "{F4DFE3A3-11ED-4BFA-8D2B-E63CB6810BCB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NajotNur.Infrastructure", "NajotNur\src\NajotNurService\NajotNur.Infrastructure\NajotNur.Infrastructure.csproj", "{F4DFE3A3-11ED-4BFA-8D2B-E63CB6810BCB}"
 EndProject
 Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{77E1EB82-1810-4943-B950-399F4DF2D09D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GateWayService", "GateWayService", "{2D903434-9F60-467E-83A1-C57CB6F32370}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gateway.API", "NajotNur\src\GateWayService\Gateway.API\Gateway.API.csproj", "{872E3027-50BD-4BB0-A3BE-8C6D826D6B1B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gateway.API", "NajotNur\src\GateWayService\Gateway.API\Gateway.API.csproj", "{872E3027-50BD-4BB0-A3BE-8C6D826D6B1B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CacheingService", "CacheingService", "{F33C092B-7D65-4DB2-89F9-3F96FE085B4B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CacheService.API", "NajotNur\src\CacheingService\CacheService.API\CacheService.API.csproj", "{437F6F4D-DEBC-461F-9D56-81077B6F943E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +55,10 @@ Global
 		{872E3027-50BD-4BB0-A3BE-8C6D826D6B1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{872E3027-50BD-4BB0-A3BE-8C6D826D6B1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{872E3027-50BD-4BB0-A3BE-8C6D826D6B1B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{437F6F4D-DEBC-461F-9D56-81077B6F943E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{437F6F4D-DEBC-461F-9D56-81077B6F943E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{437F6F4D-DEBC-461F-9D56-81077B6F943E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{437F6F4D-DEBC-461F-9D56-81077B6F943E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -63,6 +71,8 @@ Global
 		{F4DFE3A3-11ED-4BFA-8D2B-E63CB6810BCB} = {49AAD9D8-FA84-4460-96CA-906C6C6BC8CF}
 		{2D903434-9F60-467E-83A1-C57CB6F32370} = {3AAAAFA7-3C95-4DB1-8D5B-8795BFF08F3F}
 		{872E3027-50BD-4BB0-A3BE-8C6D826D6B1B} = {2D903434-9F60-467E-83A1-C57CB6F32370}
+		{F33C092B-7D65-4DB2-89F9-3F96FE085B4B} = {3AAAAFA7-3C95-4DB1-8D5B-8795BFF08F3F}
+		{437F6F4D-DEBC-461F-9D56-81077B6F943E} = {F33C092B-7D65-4DB2-89F9-3F96FE085B4B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3613851B-0601-4112-818C-CB6B629B737F}
